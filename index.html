@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071a3d">
+  <meta name="description" content="AbdUmar Simulasi — Laboratorium Maya Informatika interaktif.">
+  <title>AbdUmar Simulasi — Laboratorium Maya Informatika</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="bg-orb orb-a"></div><div class="bg-orb orb-b"></div><div class="bg-grid"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#beranda" aria-label="AbdUmar Simulasi">
+      <span class="brand-mark">A</span>
+      <span><b>AbdUmar</b><small>SIMULASI</small></span>
+    </a>
+    <nav class="nav" id="mainNav">
+      <a href="#beranda">Beranda</a>
+      <a href="#simulasi">Simulasi</a>
+      <a href="#kategori">Kategori</a>
+      <a href="#tentang">Tentang</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Buka menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero section" id="beranda">
+      <div class="hero-copy">
+        <span class="eyebrow">LABORATORIUM MAYA • INFORMATIKA</span>
+        <h1>Belajar Informatika<br><span>lebih hidup.</span></h1>
+        <p>Eksplorasi jaringan, sistem operasi, AI, algoritma, keamanan, dan sistem diskret melalui simulasi interaktif yang mudah dipahami.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#simulasi">🚀 Mulai Simulasi</a>
+          <a class="btn btn-ghost" href="#kategori">Jelajahi Kategori</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong id="simCount">40+</strong><span>Simulasi</span></div>
+          <div><strong>5</strong><span>Bidang</span></div>
+          <div><strong>100%</strong><span>Web</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="cube-scene" aria-hidden="true">
+          <div class="cube">
+            <div class="face front">NETWORK</div><div class="face back">AI</div>
+            <div class="face right">OS</div><div class="face left">DATA</div>
+            <div class="face top">CODE</div><div class="face bottom">LAB</div>
+          </div>
+        </div>
+        <div class="floating-card card-1">⚡ <b>Interaktif</b><small>Kontrol parameter</small></div>
+        <div class="floating-card card-2">🧠 <b>Visual</b><small>Algoritma terlihat</small></div>
+        <div class="floating-card card-3">🔐 <b>Keamanan</b><small>Belajar aman</small></div>
+      </div>
+    </section>
+
+    <section class="section" id="simulasi">
+      <div class="section-head">
+        <div><span class="eyebrow">KATALOG</span><h2>Pilih Laboratorium</h2></div>
+        <div class="toolbar">
+          <input id="searchInput" type="search" placeholder="🔎 Cari simulasi..." aria-label="Cari simulasi">
+          <select id="categorySelect" aria-label="Filter kategori">
+            <option value="all">Semua kategori</option>
+          </select>
+        </div>
+      </div>
+      <div class="simulation-grid" id="simulationGrid"></div>
+    </section>
+
+    <section class="section categories" id="kategori">
+      <div class="section-head"><div><span class="eyebrow">EKSPLORASI</span><h2>Bidang Pembelajaran</h2></div></div>
+      <div class="category-grid" id="categoryGrid"></div>
+    </section>
+
+    <section class="section demo-panel" id="demo">
+      <div class="section-head">
+        <div><span class="eyebrow">DEMO INTERAKTIF</span><h2 id="demoTitle">Simulasi</h2></div>
+        <button class="btn btn-ghost" id="closeDemo">Tutup</button>
+      </div>
+      <div id="demoContent"></div>
+    </section>
+
+    <section class="section about" id="tentang">
+      <div class="about-card">
+        <span class="eyebrow">ABDUMAR SIMULASI</span>
+        <h2>Laboratorium maya untuk pembelajaran Informatika.</h2>
+        <p>Versi Tahap 1 ini berjalan tanpa backend. Seluruh demo diproses di browser sehingga dapat di-host langsung melalui GitHub Pages dan siap dikembangkan menuju Firebase.</p>
+        <div class="feature-list">
+          <span>✓ GitHub Pages</span><span>✓ Tanpa Backend</span><span>✓ Responsive</span><span>✓ Large Typography</span><span>✓ 3D UI</span><span>✓ Neon Accent</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><b>AbdUmar Simulasi</b> • Laboratorium Maya Informatika • GitHub Pages Ready • © 2026</footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
